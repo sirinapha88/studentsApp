@@ -1,0 +1,9 @@
+<h1> Edit a student</h1>
+
+<h4>Student Id: <%= student.id %>  Name: <%= student.name %>  </h4>
+
+<form action="/students/<%= student.id %>?_method=PUT" method="POST">
+	<label for="name">Name:</label>
+	<input type="text" name="name" id="name" value=" <%= student.name %>">
+	<input type="submit" value="Edit a Student">
+</form>
