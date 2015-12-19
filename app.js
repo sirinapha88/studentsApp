@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(morgan('tiny'));
 app.use(methodOverride('_method'));
 
-app.use('/students', studentRoutes)
+app.use('/students', studentRoutes);
 
 
 app.listen(3000, function(){
